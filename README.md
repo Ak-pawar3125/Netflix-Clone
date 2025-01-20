@@ -21,7 +21,7 @@ Live Demo: https://ak-pawar3125.github.io/Netflix-Clone/
 
 Screenshot:
 
-![alt text](<Images/demo1.png>) ![alt text](<Images/demo2.png>) ![alt text](<Images/demo3.png>) ![alt text](<Images/demo4.png>)
+![alt text](<images/demo1.png>) ![alt text](<images/demo2.png>) ![alt text](<images/demo3.png>) ![alt text](<images/demo4.png>)
 
 
 Thank You !!
