@@ -1,20 +1,24 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #000;
 }
-.main{
+
+.main {
     background-image: url(images/background.jpg);
-    background-size: max(1200px,100vw);
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
 }
-.content{ /* for transpert background*/
+
+.content {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,187 +26,201 @@ body{
     width: 100%;
     background-color: #000000b3;
 }
-/* ----------header section------------ */
-.header{
+
+/* ---------- Header Section ------------ */
+.header {
     height: 20vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    gap: 50rem;
 }
-.header .mysvg{
+
+.header .mysvg {
     height: 40px;
     width: 148px;
-    margin-top: 22px;
-    margin-left: 200px;
 }
-.header .head2{
-    height: 32px;
-    width: 300px;
+
+.header .head2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
-.head2 select{
+
+.head2 select {
     height: 32px;
     width: 124px;
     background: none;
-    text-decoration: none;
     color: #fff;
-    margin-top: 22px;
     border-radius: 4px;
     text-align: center;
     appearance: none;
     font-weight: 550;
     font-size: 1rem;
-    margin-right: 10px;
+    padding: 0 10px;
 }
-.head2 select option{
+
+.head2 select option {
     color: black;
 }
-.head2 img{
-    height: 10px;
-    width: 10px;
-    color: #fff;
-}
-.header .sign-in{
+
+.header .sign-in {
     height: 34px;
     width: 76px;
     background-color: #e80c0c;
     border-radius: 4px;
     border: none;
-    margin-top: 22px;
-}
-.header .sign-in a{
-    text-decoration: none;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
-/* -----------hero section------------ */
-.hero{
-    height: 590px;
+
+.header .sign-in a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ----------- Hero Section ------------ */
+.hero {
+    height: 500px;
     width: 100%;
     color: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    padding-left: 28rem;
+    padding-right: 28rem;
 }
-.hero span{
+
+.hero span {
     font-size: 3.5rem;
     font-weight: 900;
-    text-align: center;
-    margin-left: 460px;
-    margin-right: 400px;
+    margin-bottom: 20px;
 }
-.hero .p1{
+
+.hero .p1,
+.hero .p2 {
     font-weight: 800;
     margin-top: 10px;
-    margin-left: 80px;
-    text-align: center;
+    margin-bottom: 20px;
 }
-.hero .p2{
-    margin-top: 40px;
-    margin-left: 80px;
-    text-align: center;
+
+.hero .p2 {
+    font-size: 0.87rem;
+    font-weight: 500;
 }
-.hero .hero2{
-    height: 60px;
-    width: auto;
+
+.hero .hero2 {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    align-items: center;
+    gap: 10px;
 }
-.hero2 input{
+
+.hero2 input {
     height: 56px;
-    width: 380px;
-    background: none;
+    width: 100%;
+    width: 27rem;
     background-color: #121111;
     border: 1px solid #999;
     padding-left: 10px;
-    margin-top: 20px;
     border-radius: 4px;
-    margin-left: 50px;
     color: #fff;
 }
-.hero2 button{
+
+.hero2 button {
     height: 56px;
-    width: 200px;
-    background-color: #e00808da;
-    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    background-color: #fd0b0bda;
+    border-radius: 0.3rem;
     color: #fff;
     font-size: 1.4rem;
     border: none;
-    margin-left: 5px;
     font-weight: 600;
-    margin-top: 20px;
+    cursor: pointer;
 }
-/* -----------Container--------------- */
-.container h2{
+
+/* ----------- Container --------------- */
+.container {
+    padding: 20px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.container h2 {
     color: #fff;
-    margin-left: 150px;
-    padding-top: 100px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-.container .s1{
-    height: 40px;
-    width: 100px;
-    appearance: none;
-    color: #fff;
-    background-color: #121111;
-    text-align: center;
-    border-radius: 4px;
-    margin-left: 150px;
-    margin-right: 10px;
-    margin-top: 20px;
-}
-.container .s2{
-    height: 40px;
-    width: 122px;
-    appearance: none;
-    color: #fff;
-    background-color: #121111;
-    text-align: center;
-    border-radius: 4px;
-}
-.container .selects .s1 i{
-    color: #999;
-}
-.film-section{
-    height: 250px;
-    width: 100%;
-}
-.film-section .film{
-    margin-right: 150px;
-    margin-left: 170px;
+
+.container .selects {
     display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
     gap: 10px;
-    white-space: nowrap;
-    scrollbar-width: none;
+    margin-bottom: 20px;
 }
-.film-section .image-box{
+
+.container .s1,
+.container .s2 {
+    height: 40px;
+    width: 100%;
+    max-width: 122px;
+    background-color: #121111;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    appearance: none;
+    padding: 0 10px;
+}
+
+.film-section {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: hidden;
+
+}
+
+.film-section .film {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.film-section .image-box {
     width: 200px;
     height: 350px;
-    margin-left: 30px;
     transition: transform 0.3s ease, z-index 0.3s ease;
 }
-.film-section img{
+
+.film-section img {
     height: 240px;
     width: 170px;
     margin-top: 30px;
     border-radius: 8px;
 }
-.film-section .image-box:hover{
+
+.film-section .image-box:hover {
     transform: scale(1.1);
     z-index: 10;
-    box-shadow: 0 5px 15px #0000004d;
+    box-shadow: 0 4px 14px #0000004d;
 }
-.film-section .image-box .number{
+
+.film-section .image-box .number {
     position: relative;
     color: #000;
     font-size: 100px;
     font-weight: bolder;
-    text-shadow: 2px 2px 4px #000000cc; 
-    -webkit-text-stroke: 2px #ddd; 
+    text-shadow: 2px 2px 4px #000000cc;
+    -webkit-text-stroke: 2px #ddd;
 }
 
 .film-section .image-box .number.one {
@@ -210,163 +228,430 @@ body{
     left: -20px;
 }
 
-.reasons .boxes{
-    height: 250px;
-    width: 80vw;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 20px;
+/* ----------- Reasons Section ------------ */
+.reasons {
+    padding: 20px;
+}
+
+.reasons .boxes {
     display: flex;
-    gap: 15px;
-}
-.reasons .box1, .box2, .box3, .box4{
-    height: 270px;
-    width: 300px;
-    background: linear-gradient(135deg, #192145, #1c1931, #1e1425, #20101c); /* Gradient background */
-    border-radius: 15px;
-    
-}
-.reasons .boxes .box1 h3, .box2 h3, .box3 h3, .box4 h3{
-    margin-top: 20px;
-    margin-left: 15px;
-    color: #fff;
-    font-size: 25px;
-}
-.reasons .boxes .box1 p, .box2 p, .box3 p, .box4 p{
-    margin-top: 20px;
-    margin-left: 15px;
-    color: #999;
-}
-.reasons .boxes .icon1-3{
-    margin-top: 70px;
-    margin-left: 200px;
-}
-.reasons .boxes .icon2{
-    margin-top: 55px;
-    margin-left: 200px;
-}
-.reasons .boxes .icon4{
-    margin-top: 45px;
-    margin-left: 200px;
-}
-.faq{
-    height: 620px;
-    width: auto;
-}
-.faq .buttons{
-    height: 620px;
-    width: auto;
-    display: inline-flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
+    gap: 7px;
+    justify-content: space-between;
 }
-.faq h2{
+
+.reasons .box1,
+.box2,
+.box3,
+.box4 {
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(135deg, #192145, #1c1931, #1e1425, #20101c);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+.reasons .boxes h3 {
+    font-size: 24px;
+    color: #fff;
+    text-align: start;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.reasons .boxes p {
+    color: #999;
+    text-align: start;
+    margin-top: 2rem;
+}
+
+.reasons .icon1-3 {
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
+.reasons .icon2 {
+    margin-top: 4.3rem;
+    margin-left: 12rem;
+}
+
+.reasons .icon4 {
+    margin-top: 2.5rem;
+    margin-left: 12rem;
+}
+
+/* ----------- FAQ Section ------------ */
+.faq {
+    padding: 20px;
+}
+
+.faq h2 {
     margin-bottom: 20px;
 }
-.faq button{
-    height: 85px;
-    width: 80vw;
-    margin-left: 150px;
+
+.faq button {
+    width: 100%;
+    height: 84px;
     background-color: #2d2d2d;
     color: #fff;
     font-size: 1.5rem;
     border: none;
-    padding-left: 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
-.faq button:hover{
+
+.faq button:hover {
     background-color: #414141;
 }
-.faq button .plus{
+
+.faq button .plus {
     margin-right: 20px;
 }
-.get-started{
-    height: 70px;
-    width: 80vw;
-    margin-left: 150px;
-    margin-top: 130px;
-}
-.get-started .p2{
-    color: #fff;
+
+/* ----------- Get Started Section ------------ */
+.get-started {
+    padding: 20px;
     text-align: center;
 }
-.get-started .hero2{
-    margin-left: 250px;
+
+.get-started .p2 {
+    color: #fff;
+    margin-bottom: 20px;
 }
-.footer{
-    height: 460px;
-    width: 80vw;
-    margin-top: 100px;
+
+.get-started .hero2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* ----------- Footer Section ------------ */
+.footer {
+    padding: 20px;
     color: #ffffffb3;
-    margin-left: 150px;
     font-size: 1rem;
     font-weight: 500;
 }
-.footer .lists{
-    margin-top: 50px;
+
+.footer .lists {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: space-between;
 }
-.footer ul{
+
+.footer ul {
     list-style-type: none;
+    width: 100%;
+    max-width: 200px;
 }
-.footer li{
-    margin-bottom: 15px;
+
+.footer li {
+    margin-bottom: 14px;
 }
-.footer a{
+
+.footer a {
     color: #ffffffb3;
+    text-decoration: underline 1px #ddd;
 }
-.footer .head2{
-   margin-top: 50px;
-}
-.footer .head2 p{
+
+.footer .head2 {
     margin-top: 50px;
-}
-.hero2 i{
-    margin-left: 5px;
+    margin-top: 3rem;
 }
 
-/*-----------------Media queries for mobile-----------*/
+.footer .head2 p {
+    margin-top: 20px;
+}
 
-@media screen and (max-width :425px){
-    .main {
-        padding: 10px; 
-        width: 425px;
+/* ----------- Media Queries ------------ */
+@media (min-width:320px) and (max-width: 480px) {
+    .container {
+        margin: 0;
+        padding: 10px;
     }
-    .header{
-        height: 15vh;
-        width: 425px;
+
+    .header {
+        gap: 0;
+        flex-wrap: wrap;
+        margin-top: 1rem;
     }
-    .content{
-        width: 425px;
+
+    .hero {
+        padding: 10px;
     }
-    .head2 {
-        height: 15vh;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .header .mysvg{
-        width: 100px;
-    }
-    .head2 select{
-        height: 28px;
-        width: 70px;
-        font-size: 0.7rem;
-    }
-    .head2 .sign-in{
-        height: 28px;
-        width: 50px;
-    }
-    .head2 .sign-in a{
-        font-size: 0.7rem;
-    }
+
     .hero span {
-        font-size: 1.5rem;
-        font-weight: 750;
-        height: 30px;
-        margin: auto;
+        margin-bottom: 0;
+        font-size: 2.5rem;
     }
+
+    .hero .p1,
+    .hero .p2 {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .hero2 {
+        flex-direction: column;
+    }
+
+    .hero2 input {
+        max-width: 270px;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .reasons .boxes h3 {
+        font-size: 20px;
+    }
+
+    .reasons .icon2 {
+        margin-top: 3.5rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .icon1-3 {
+        margin-top: 4rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .icon4 {
+        margin-top: 3.5rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .boxes {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .reasons .box1,
+    .box2,
+    .box3,
+    .box4 {
+        height: auto;
+        width: auto;
+    }
+
+    .reasons .icon1-3 {
+        margin-top: 1.2rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .icon2 {
+        margin-top: 0.5rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .icon4 {
+        margin-top: 0.9rem;
+        margin-left: 10rem;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .faq button {
+        text-align: start;
+        font-size: 1.2rem;
+    }
+
+    .faq button .plus {
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .header {
+        gap: 0;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .hero span {
+        font-size: 2rem;
+    }
+
+    .hero2 {
+        flex-direction: column;
+    }
+
+    .hero2 input {
+        max-width: 300px;
+    }
+
+    .reasons .boxes {
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .reasons .box1,
+    .box2,
+    .box3,
+    .box4 {
+        height: auto;
+        width: 45rem;
+    }
+
+    .reasons .icon1-3 {
+        margin-top: 1.2rem;
+        margin-left: 15rem;
+    }
+
+    .reasons .icon2 {
+        margin-top: 0.5rem;
+        margin-left: 15rem;
+    }
+
+    .reasons .icon4 {
+        margin-top: 0.9rem;
+        margin-left: 15rem;
+    }
+
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        padding: 0;
+        height: 400px;
+    }
+
+    .header {
+        gap: 0;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .reasons .boxes {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .reasons .box1,
+    .box2,
+    .box3,
+    .box4 {
+        height: auto;
+        width: 50rem;
+    }
+
+    .reasons .icon1-3 {
+        margin-top: 1.2rem;
+        margin-left: 35rem;
+    }
+
+    .reasons .icon2 {
+        margin-top: 0.5rem;
+        margin-left: 35rem;
+    }
+
+    .reasons .icon4 {
+        margin-top: 0.9rem;
+        margin-left: 35rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero {
+        padding: 5rem;
+    }
+
+    .header {
+        gap: 25rem;
+    }
+
+    .container {
+        padding: 5rem;
+    }
+
+    .reasons .boxes {
+        justify-content: center;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .reasons .box1,
+    .box2,
+    .box3,
+    .box4 {
+        height: auto;
+        width: 400px;
+    }
+
+    .reasons .icon1-3 {
+        margin-top: 2rem;
+        margin-left: 18rem;
+    }
+
+    .reasons .icon2 {
+        margin-top: 0.5rem;
+        margin-left: 18rem;
+    }
+
+    .reasons .icon4 {
+        margin-top: 0.9rem;
+        margin-left: 18rem;
+    }
+
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .hero {
+        padding: 20rem;
+    }
+
+    .reasons .boxes {
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .reasons .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 274px;
+    }
+
+    .reasons .icon1-3 {
+        margin-top: 3.5rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .icon2 {
+        margin-top: 0.5rem;
+        margin-left: 10rem;
+    }
+
+    .reasons .icon4 {
+        margin-top: 1.2rem;
+        margin-left: 10rem;
+    }
+
 }
