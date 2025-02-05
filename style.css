@@ -372,12 +372,14 @@ body {
 
 /* ----------- Media Queries ------------ */
 @media (min-width:320px) and (max-width: 480px) {
-    .main{
+    .main {
         height: 120vh;
     }
-    .content{
+
+    .content {
         height: 120vh;
     }
+
     .container {
         margin: 0;
         padding: 10px;
@@ -542,12 +544,14 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .main{
+    .main {
         height: 80vh;
     }
-    .content{
+
+    .content {
         height: 80vh;
     }
+
     .hero {
         padding: 0;
         height: 400px;
