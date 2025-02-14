@@ -17,7 +17,9 @@ This project is a clone of the Netflix homepage, created using HTML and CSS. It 
 
 # Demo 🎥 
 
-Live Demo: https://akankshap-netfl-web-home-clone.netlify.app
+Live Demo: 
+
+https://akankshap-homepage-clone.netlify.app/
 
 Screenshot:
 
