@@ -93,9 +93,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
-    padding-left: 28rem;
-    padding-right: 28rem;
 }
 
 .hero span {
@@ -554,7 +551,7 @@ body {
 
     .hero {
         padding: 0;
-        height: 400px;
+        height: auto;
     }
 
     .header {
